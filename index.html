@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
   </head>
   <body>
     <!-- Header section -->
     <header class="main-header">
       <div class="container">
         <div class="main-header__brand">
-          <a href="index.html">
-            <img src="images/Js-logo.png" alt="img" />
+          <a href="./index.html">
+            <img src="./images/Js-logo.png" alt="Logo" />
           </a>
         </div>
         <nav class="main-navigation">
           <ul class="main-navigation__items">
-            <li class="main-navigation__item active"><a href="#">Asosiy</a></li>
-            <li class="main-navigation__item"><a href="#">Men haqimda</a></li>
-            <li class="main-navigation__item"><a href="#">Xizmatlar</a></li>
-            <li class="main-navigation__item"><a href="#">Mijozlar</a></li>
-            <li class="main-navigation__item"><a href="#">Portfolio</a></li>
-            <li class="main-navigation__item"><a href="#">Blog</a></li>
-            <li class="main-navigation__item"><a href="#">Sheriklar</a></li>
+            <li class="main-navigation__item active">
+              <a href="./index.html">Asosiy</a>
+            </li>
             <li class="main-navigation__item">
-              <a href="./contact.html">Bog`lanish</a>
+              <a href="#main-section">Men haqimda</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#services">Xizmatlar</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#clients">Mijozlarim</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#blog">Blog</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#partners">Sheriklar</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="./contact.html">Bog'lanish</a>
             </li>
           </ul>
         </nav>
@@ -40,78 +56,79 @@
     <!-- /Header section -->
 
     <!-- Main section -->
-    <div class="container">
-      <section id="main-section" class="main-section">
-        <div class="main-section__info">
-          <h4 class="main-section__welcome to-uppercase">Salom hammaga!</h4>
-          <h1 class="main-section__introduction to-uppercase">
-            I am Samigjonov
-          </h1>
-          <h3 class="main-section__position to-uppercase">
-            Senior (katta) dasturchi & Vlogger
-          </h3>
-          <div class="main-section__social-networks">
-            <a href="https://t.me/JAVOHIRs_official">
-              <i class="fa-brands fa-telegram"></i>
-            </a>
-            <a href="https://www.youtube.com/@Javohir.me.s">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://www.instagram.com/javohir.me.s">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+    <div class="main-banner">
+      <div class="container">
+        <section id="main-section" class="main-section">
+          <div class="main-section__info">
+            <h4 class="main-section__welcome to-uppercase">Salom hammaga!</h4>
+            <h1 class="main-section__introduction to-uppercase">I am ME.s</h1>
+            <h3 class="main-section__position to-uppercase">Junior</h3>
+            <div class="main-section__social-networks">
+              <a href="https://t.me/mohirdev">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC1wuFkzE7FZ7CsbdatrdGBw"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://instagram.com/ulugbeksamigjonov">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <button
+              type="button"
+              class="main-section__action to-uppercase button"
+            >
+              Ishlarimni ko'ring
+            </button>
           </div>
-          <button
-            type="button"
-            class="button main-section__action to-uppercase"
-          >
-            Ishlarim ko'ring
-          </button>
-        </div>
-        <div class="main-section__imge">
-          <img class="main-imge" src="images/img-man.png" alt="My_img" />
-        </div>
-      </section>
+          <div class="main-section__image">
+            <div class="clearfix"></div>
+            <img src="./images/me.png" alt="My image" />
+          </div>
+        </section>
+      </div>
     </div>
-    <div class="clearfix"></div>
     <!-- /Main section -->
 
     <!-- Statistics -->
     <div class="container">
-      <section id="statisrics" class="statistics">
+      <section id="statistics" class="statistics">
         <div class="statistics__item">
-          <h3 class="statisrics__number">15k+</h3>
-          <p class="statisrics__title">Hursand mijozlar</p>
+          <h3 class="statistics__number">15k+</h3>
+          <p class="statistics__title">Hursand mijozlar</p>
         </div>
         <div class="statistics__item">
-          <h3 class="statisrics__number">12k+</h3>
-          <p class="statisrics__title">Yordam</p>
+          <h3 class="statistics__number">12k+</h3>
+          <p class="statistics__title">Yordam</p>
         </div>
         <div class="statistics__item">
-          <h3 class="statisrics__number">9/10</h3>
-          <p class="statisrics__title">O'rtacha reyting</p>
+          <h3 class="statistics__number">9/10</h3>
+          <p class="statistics__title">O'rtacha reyting</p>
         </div>
       </section>
     </div>
-    <!-- /Statistics -->
 
     <!-- About me section -->
     <div class="container">
-      <section id="about-me">
+      <section id="about-me" class="about-me">
         <div class="about-me__image">
-          <img src="images/img-man.png" alt="About me image" />
+          <img src="./images/JObreed.jpg" alt="About me image" />
         </div>
         <div class="about-me__info">
           <h5 class="section-subtitle">
-            Men haqimda<span class="blur-line"></span>
+            About me
+            <span class="blur-line"></span>
           </h5>
-          <h3 class="section-title">Senior (katta) dasturchi</h3>
+          <h3 class="section-title">Junior</h3>
           <p class="about-me__description">
-            Mening ismim Javohir va men 19 yoshdaman. 1 yildan beri web
-            dasturlash sohasida o`qiyman.
+            Mening ismim Javohir va men 20 yoshdaman. 1 yildan ortiq vaqt
+            mobaynida dasturlashni organaman hozirda men Mohirdev kurslari
+            talabasi hisoblanaman
           </p>
           <button type="button" class="button to-uppercase about-me__action">
-            CV ko`chirib olish
+            CV ko'chirib olish
           </button>
         </div>
       </section>
@@ -121,53 +138,54 @@
 
     <!-- Services section -->
     <div class="container">
-      <section id="services">
+      <section id="services" class="services">
         <h5 class="section-subtitle">
           Mening xizmatlarim
           <span class="blur-line"></span>
         </h5>
         <h2 class="section-title">
           Men taklif <br />
-          qiladigan Xizmatlar
+          qiladigan xizmatlar
         </h2>
         <div class="services__cards">
-          <div class="services-card">
-            <i
-              class="services-card__icon fa-regular fa-window-restore fa-sm"
-              style="color: #c1b310"
-            ></i>
-            <h5 class="services-card__title">Veb dasturlash</h5>
-            <p class="services-card__description">
-              Savollaringizga to`liq javoblar birinchi veb saytingizni yaratish
+          <div class="service-card">
+            <img
+              class="service-card__icon"
+              src="./images/square image.png"
+              alt="Service 1"
+            />
+            <h5 class="service-card__title">Web dasturchi</h5>
+            <p class="service-card__description">
+              Savollaringizga to'liq javoblar Birinchi veb saytingizni yaratish
               uchun kerak bo'ladigan barcha resurslar
             </p>
-            <a href="#" class="services-card__link"> Ko'proq </a>
+            <a href="#" class="service-card__link">Ko'proq</a>
           </div>
-          <div class="services-card">
-            <i
-              class="services-card__icon fa-solid fa-file-code fa-sm"
-              style="color: #63e6be"
-            ></i>
-
-            <h5 class="services-card__title">Veb dasturlash</h5>
-            <p class="services-card__description">
-              Savollaringizga to`liq javoblar birinchi veb saytingizni yaratish
+          <div class="service-card">
+            <img
+              class="service-card__icon"
+              src="./images/3 circles.png"
+              alt="Service 1"
+            />
+            <h5 class="service-card__title">Web dasturchi</h5>
+            <p class="service-card__description">
+              Savollaringizga to'liq javoblar Birinchi veb saytingizni yaratish
               uchun kerak bo'ladigan barcha resurslar
             </p>
-            <a href="#" class="services-card__link"> Ko'proq </a>
+            <a href="#" class="service-card__link">Ko'proq</a>
           </div>
-          <div class="services-card">
-            <i
-              class="services-card__icon fa-solid fa-circle-nodes fa-sm"
-              style="color: #c1b310"
-            ></i>
-
-            <h5 class="services-card__title">Veb dasturlash</h5>
-            <p class="services-card__description">
-              Savollaringizga to`liq javoblar birinchi veb saytingizni yaratish
+          <div class="service-card">
+            <img
+              class="service-card__icon"
+              src="./images/code img.png"
+              alt="Service 1"
+            />
+            <h5 class="service-card__title">Web dasturchi</h5>
+            <p class="service-card__description">
+              Savollaringizga to'liq javoblar Birinchi veb saytingizni yaratish
               uchun kerak bo'ladigan barcha resurslar
             </p>
-            <a href="#" class="services-card__link"> Ko'proq </a>
+            <a href="#" class="service-card__link">Ko'proq</a>
           </div>
         </div>
       </section>
@@ -188,88 +206,86 @@
         <div class="client-items">
           <div class="client-item">
             <div class="client-item__image">
-              <img src="./images/img-man.png" alt="Client image" />
+              <img src="./images/JObreed.jpg" alt="Client image" />
             </div>
             <div class="client-item__info">
-              <h3 class="client-item__name">Alisher Sultonov</h3>
-              <p class="client-item__position">Senior (katta) dasturchi</p>
+              <h3 class="client-item__name">Javohir Toshov</h3>
+              <p class="client-item__position">Senior dasturchi</p>
               <p class="client-item__review">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                praesentium architecto est hic, ut aperiam quos quia ipsam
-                tempora nemo atque temporibus. excepturi. Aliquam veniam sunt
-                perspiciatis non illum laudantium
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                obcaecati accusamus nesciunt quod veniam atque quae nihil illum
+                sed laborum?
               </p>
               <div class="client-item__rate">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star disabled"></i>
+                <i class="fas fa-star"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
     <!-- /Clients section -->
 
     <!-- Portfolio section -->
     <div class="container">
       <section id="portfolio" class="portfolio">
         <div class="section-subtitle">
-          Mening ishlarim
+          Mening Ishlarim
           <span class="blur-line"></span>
         </div>
         <div class="section-title">
           Mening oxirgi <br />
-          ishlarimni ko`ring
+          Ishlarimni ko'ring
         </div>
         <ul class="portfolio-filters">
           <li class="active">Hammasi</li>
-          <li>Mashxurlari</li>
+          <li>Mashhurlari</li>
           <li>Oxirgilari</li>
         </ul>
-
         <div class="portfolio-items">
           <div class="portfolio-item portfolio-item-1">
             <img
-              class="portfolio-item_img1 portfolio-item__image"
-              src="images/image-1.webp"
-              alt="Portfolio image 1"
+              src="./images/T-shirt.jpg"
+              alt="Portfolio image"
+              class="portfolio-item__image"
             />
             <div class="portfolio-item__overlay"></div>
             <div class="portfolio-item__info">
               <h4>
-                <a href="#">Portfolio item 1 </a>
+                <a href="#">Portfolio Item1</a>
               </h4>
               <p>Ishim haqida</p>
             </div>
           </div>
           <div class="portfolio-item portfolio-item-2">
             <img
-              class="portfolio-item_img1 portfolio-item__image"
-              src="images/image-2.jpg"
+              src="./images/clock.jpg"
               alt="Portfolio image 2"
+              class="portfolio-item__image"
             />
             <div class="portfolio-item__overlay"></div>
             <div class="portfolio-item__info">
               <h4>
-                <a href="#">Portfolio item 2 </a>
+                <a href="#">Portfolio Item1</a>
               </h4>
               <p>Ishim haqida</p>
             </div>
           </div>
           <div class="portfolio-item portfolio-item-3">
             <img
-              class="portfolio-item_img1 portfolio-item__image"
-              src="images/image-3.jpg"
+              src="./images/pen.jpg"
               alt="Portfolio image 3"
+              class="portfolio-item__image"
             />
             <div class="portfolio-item__overlay"></div>
             <div class="portfolio-item__info">
               <h4>
-                <a href="#">Portfolio item 3 </a>
+                <a href="#">Portfolio Item1</a>
               </h4>
               <p>Ishim haqida</p>
             </div>
@@ -283,9 +299,9 @@
     <div class="container">
       <section id="blog" class="blog">
         <div class="section-subtitle">
-          Menin blogim <span class="blur-line"></span>
+          Mening blogim
+          <span class="blur-line"></span>
         </div>
-
         <div class="section-title">Oxirgi maqolalarim</div>
         <div class="blog-items">
           <div class="blog-item">
@@ -300,16 +316,15 @@
                 </span>
                 <span class="blog-item__date">
                   <i class="fa fa-calendar"></i>
-                  May 17, 2024</span
-                >
+                  Feb 5, 2021
+                </span>
               </div>
-              <h5 class="blog-item__title">Mening maqolam...</h5>
+              <h5 class="blog-item__title">Mening maqolam</h5>
               <p class="blog-item__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
-                libero fugit nisi at possimus eaque dolor molestias vitae,
-                voluptas eveniet!
+                Have whose a two night earth she set you creeping replenish
+                place whales move Forth first him seed green.
               </p>
-              <a href="#" class="blog-item__learn-more">Ko`proq o`qish</a>
+              <a class="blog-item__learn-more"> Ko'proq o'qish </a>
             </div>
           </div>
           <div class="blog-item">
@@ -324,16 +339,15 @@
                 </span>
                 <span class="blog-item__date">
                   <i class="fa fa-calendar"></i>
-                  May 17, 2024</span
-                >
+                  Feb 5, 2021
+                </span>
               </div>
-              <h5 class="blog-item__title">Mening maqolam...</h5>
+              <h5 class="blog-item__title">Mening maqolam</h5>
               <p class="blog-item__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
-                libero fugit nisi at possimus eaque dolor molestias vitae,
-                voluptas eveniet!
+                Have whose a two night earth she set you creeping replenish
+                place whales move Forth first him seed green.
               </p>
-              <a href="#" class="blog-item__learn-more">Ko`proq o`qish</a>
+              <a class="blog-item__learn-more"> Ko'proq o'qish </a>
             </div>
           </div>
           <div class="blog-item">
@@ -348,16 +362,15 @@
                 </span>
                 <span class="blog-item__date">
                   <i class="fa fa-calendar"></i>
-                  May 17, 2024</span
-                >
+                  Feb 5, 2021
+                </span>
               </div>
-              <h5 class="blog-item__title">Mening maqolam...</h5>
+              <h5 class="blog-item__title">Mening maqolam</h5>
               <p class="blog-item__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
-                libero fugit nisi at possimus eaque dolor molestias vitae,
-                voluptas eveniet!
+                Have whose a two night earth she set you creeping replenish
+                place whales move Forth first him seed green.
               </p>
-              <a href="#" class="blog-item__learn-more">Ko`proq o`qish</a>
+              <a class="blog-item__learn-more"> Ko'proq o'qish </a>
             </div>
           </div>
         </div>
@@ -372,32 +385,75 @@
           <img src="./images/partner-1.png" />
         </div>
         <div class="partner">
-          <img src="./images/partner-2.jpg" />
+          <img src="./images/partner-2.png" />
         </div>
         <div class="partner">
-          <img src="./images/partner-3.jpg" />
+          <img src="./images/partner-3.png" />
         </div>
         <div class="partner">
-          <img src="./images/partner-4.jpg" />
+          <img src="./images/partner-4.png" />
+        </div>
+        <div class="partner">
+          <img src="./images/partner-5.png" />
         </div>
       </section>
     </div>
-    <!-- /Partner section -->
+    <!-- /Partners section -->
 
-    <!-- Footer section -->
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="#">Asosiy</a></li>
-          <li><a href="#">Men haqimda</a></li>
-          <li><a href="#">Xizmatlar</a></li>
-          <li><a href="#">Mijozlar</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Sheriklar</a></li>
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__brand">
+          <img src="./images/Js-logo.png" alt="logo" />
+        </div>
+        <nav class="footer-navigation">
+          <ul class="footer__navigation-items">
+            <li class="footer__navigation-item">
+              <a href="#">Asosiy</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#">Men haqimda</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#">Xizmatlar</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#">Mijozlarim</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#">Portfolio</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a href="#">Sheriklar</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__socials">
+          <li class="footer__social">
+            <a href="#">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
         </ul>
-      </nav>
+        <p class="footer-text">
+          Copyright ©2021 All rights served | This template is made with by
+          Colorlib
+        </p>
+      </div>
     </footer>
-    <!-- /Footer section -->
+    <!-- /footer section -->
   </body>
 </html>
